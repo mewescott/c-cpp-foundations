@@ -1,0 +1,23 @@
+# Source-focused learning archive: ignore binaries (including extensionless
+# Linux executables), then allow source, sample inputs, and documentation.
+*
+!*/
+!*.c
+!*.cpp
+!*.h
+!*.hpp
+!*.txt
+!*.md
+!.gitignore
+!.gitattributes
+
+# Local editor settings and generated output stay on this machine.
+.vscode/
+build/
+cmake-build-*/
+.cache/
+
+# Never publish local credentials or environment files.
+.env*
+*.pem
+*.key
